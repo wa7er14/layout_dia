@@ -596,18 +596,12 @@ input {
         color: inherit; }
       .form__input:focus::placeholder {
         color: inherit; }
+  .form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 100px #008aff inset; }
   .form__button {
     margin-top: 80px;
     padding: 16px 0;
     width: 226px; }
-
-@-webkit-keyframes autofill {
-  to {
-    color: inherit;
-    background: transparent; } }
-  .form input:-webkit-autofill {
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both; }
   @media (max-width: 992px) {
     .form__title {
       display: none; }
