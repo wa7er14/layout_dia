@@ -597,7 +597,7 @@ input {
         color: inherit; }
   .form input:-webkit-autofill {
     -webkit-text-fill-color: #fff;
-    -webkit-box-shadow: 0 0 0px 100px #008aff inset; }
+    -webkit-box-shadow: 0 0 0 100px #008aff inset; }
   .form__button {
     margin-top: 80px;
     padding: 16px 0;
@@ -725,9 +725,13 @@ input {
     line-height: 1.5;
     color: #fff; }
   .header__button {
-    padding: 13px 0;
+    display: block;
+    padding: 18px 0;
     margin-top: 83px;
-    width: 226px; }
+    width: 226px;
+    text-align: center; }
+    .header__button:hover {
+      cursor: pointer; }
   .header__carousel {
     width: 43vw;
     max-width: 678px;
@@ -1087,7 +1091,8 @@ input {
     max-width: 700px;
     margin: 24px auto 0; }
   .components__button {
-    padding: 16px 90px;
+    display: inline-block;
+    padding: 21px 90px;
     margin-top: 64px; }
   @media (max-width: 768px) {
     .components__container {
